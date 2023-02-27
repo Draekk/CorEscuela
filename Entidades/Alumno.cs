@@ -8,7 +8,6 @@ public class Alumno
 {
     public string UniqueId { get; set; }
     public string Nombre { get; set; }
-    public Curso Curso { get; set; }
     public List<Asignatura> Asignaturas { get; set; }
 
     public Alumno(string nombre, List<Asignatura> asignaturas)
