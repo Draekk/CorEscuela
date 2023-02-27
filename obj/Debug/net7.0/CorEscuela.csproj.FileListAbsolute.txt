@@ -1,0 +1,15 @@
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\bin\Debug\net7.0\CorEscuela.exe
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\bin\Debug\net7.0\CorEscuela.deps.json
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\bin\Debug\net7.0\CorEscuela.runtimeconfig.json
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\bin\Debug\net7.0\CorEscuela.dll
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\bin\Debug\net7.0\CorEscuela.pdb
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\obj\Debug\net7.0\CorEscuela.csproj.AssemblyReference.cache
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\obj\Debug\net7.0\CorEscuela.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\obj\Debug\net7.0\CorEscuela.AssemblyInfoInputs.cache
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\obj\Debug\net7.0\CorEscuela.AssemblyInfo.cs
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\obj\Debug\net7.0\CorEscuela.csproj.CoreCompileInputs.cache
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\obj\Debug\net7.0\CorEscuela.dll
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\obj\Debug\net7.0\refint\CorEscuela.dll
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\obj\Debug\net7.0\CorEscuela.pdb
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\obj\Debug\net7.0\CorEscuela.genruntimeconfig.cache
+C:\Users\Drakkseid\Downloads\CorEscuela\CorEscuela\obj\Debug\net7.0\ref\CorEscuela.dll
