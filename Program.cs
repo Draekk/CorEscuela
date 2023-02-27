@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Linq;
 
-namespace CorEscuela;
-
-public static class Program
+namespace CorEscuela.Entidades
 {
-	public static void Main()
-	{
-		System.Console.WriteLine("Funciono");
-	}
+    public static class Program
+    {
+        public static void Main()
+        {
+			EscuelaEngine eEngine = new EscuelaEngine();
+            eEngine.Inicializar();
+        }
+    }
 }
