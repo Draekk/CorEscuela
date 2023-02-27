@@ -26,8 +26,29 @@ public class Escuela
 
         var alumnos = from n in nombre
                       from a in apellido
-                      select new Alumno($"{n} {a}");
+                      select new Alumno($"{n} {a}", ListaAsignaturas(new string[] { "Castellano", "Inglés", "Matemáticas", "Física" }));
         return alumnos.OrderBy((al) => al.UniqueId).Take(cantidad).ToList();
+    }
+
+    public List<Asignatura> ListaAsignaturas(string[] nombres)
+    {
+        List<Asignatura> asignaturas = new List<Asignatura>();
+        foreach (var n in nombres)
+        {
+            asignaturas.Add(new Asignatura(n, new Evaluaciones(GenerarNotas())));
+        }
+        return asignaturas;
+    }
+
+    public int[] GenerarNotas()
+    {
+        Random rnd = new Random();
+        int[] notas = new int[3];
+        for (int i = 0; i < notas.Length; i++)
+        {
+            notas[i] = rnd.Next(0, 10);
+        }
+		return notas;
     }
 
     public void AñadirCurso(Curso curso) => Cursos.Add(curso);
@@ -40,15 +61,22 @@ public class Escuela
             foreach (var curso in Cursos)
             {
                 c += $"Curso {curso.Nombre}...";
-                if (curso.Alumnos.Count > 0)
+                string a = $"\nAlumnos:";
+                foreach (var alumno in curso.Alumnos)
                 {
-                    string a = $"\nAlumnos:";
-                    foreach (var alumno in curso.Alumnos)
+                    string asig = $"\n	Evaluaciones:";
+                    foreach (var asignatura in alumno.Asignaturas)
                     {
-                        a += $"\n{alumno.Nombre}";
+						string notas = "";
+						for(int i = 0; i < asignatura.Notas.Length; i++){
+							notas += $" {asignatura.Notas[i].ToString()}";
+						}
+                        asig += $"\n	{asignatura.Nombre}: {notas} Promedio: {asignatura.Notas.Average().ToString("F2")}";
                     }
-                    c += $"{a}.\n\n";
+                    a += $"\n{alumno.Nombre}\n{asig}\n\n";
+
                 }
+                c += $"{a}\n\n";
             }
             return $"Nombre: {Nombre}\n\nCursos:\n{c}";
         }

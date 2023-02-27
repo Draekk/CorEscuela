@@ -14,5 +14,6 @@ public class EscuelaEngine
 		escuela.AñadirCurso(new Curso("301", escuela.InscripcionMasivaAlumnos(5)));
 		System.Console.WriteLine(escuela.ToString());
 	}
+
 	
 }

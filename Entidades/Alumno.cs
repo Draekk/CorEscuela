@@ -11,19 +11,11 @@ public class Alumno
     public Curso Curso { get; set; }
     public List<Asignatura> Asignaturas { get; set; }
 
-    public Alumno(string nombre)
+    public Alumno(string nombre, List<Asignatura> asignaturas)
     {
         UniqueId = Guid.NewGuid().ToString();
         Nombre = nombre;
+		Asignaturas = asignaturas;
     }
-
-    public Alumno(string nombre, Curso curso)
-    {
-        UniqueId = Guid.NewGuid().ToString();
-        Nombre = nombre;
-        Curso = curso;
-    }
-
-
 
 }
