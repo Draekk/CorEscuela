@@ -44,7 +44,7 @@ public class Escuela
         int[] notas = new int[3];
         for (int i = 0; i < notas.Length; i++)
         {
-            notas[i] = rnd.Next(0, 10);
+            notas[i] = rnd.Next(0, 11);
         }
 		return notas;
     }
@@ -67,7 +67,7 @@ public class Escuela
                     {
 						string notas = "";
 						for(int i = 0; i < asignatura.Notas.Length; i++){
-							notas += $" {asignatura.Notas[i].ToString()}";
+							notas += $"{asignatura.Notas[i].ToString()}, ";
 						}
                         asig += $"\n	{asignatura.Nombre}: {notas} Promedio: {asignatura.Notas.Average().ToString("F2")}";
                     }
