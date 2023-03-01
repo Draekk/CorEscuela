@@ -4,15 +4,12 @@ using System.Collections.Generic;
 
 namespace CorEscuela.Entidades;
 
-public class Alumno
+public class Alumno : ObjetoEscuelaBase
 {
-    public string UniqueId { get; set; }
-    public string Nombre { get; set; }
     public List<Asignatura> Asignaturas { get; set; }
 
     public Alumno(string nombre, List<Asignatura> asignaturas)
     {
-        UniqueId = Guid.NewGuid().ToString();
         Nombre = nombre;
 		Asignaturas = asignaturas;
     }
